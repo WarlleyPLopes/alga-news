@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Info, { InfoProps } from "../components/Info/Info";
+import Info, { InfoProps } from "../app/components/Info/Info";
 
 export default {
   title: "Example/Info",

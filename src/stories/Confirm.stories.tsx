@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Confirm, { ConfirmProps } from "../components/Confirm/Confirm";
+import Confirm, { ConfirmProps } from "../app/components/Confirm/Confirm";
 
 export default {
   title: "Example/Confirm",

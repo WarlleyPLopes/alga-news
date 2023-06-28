@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import './index.css';
+import CalcView from './app/views/Calc.view';
+import Contact from './app/views/Contact.view';
+import Home from './app/views/Home.view';
+import NotFound404 from './app/views/NotFound404.view';
+import UserView from './app/views/User.view';
+import GlobalStyles from './core/globalStyles';
+import './core/imports.css';
 import reportWebVitals from './reportWebVitals';
-import CalcView from './views/Calc.view';
-import Contact from './views/Contact.view';
-import Home from './views/Home.view';
-import NotFound404 from './views/NotFound404.view';
-import UserView from './views/User.view';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +17,6 @@ root.render(
   <React.StrictMode>
 
     <BrowserRouter>
-      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -27,6 +26,8 @@ root.render(
 
       </Routes>
     </BrowserRouter>
+
+    <GlobalStyles />
   </React.StrictMode>
 );
 
