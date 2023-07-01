@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface PorcentageProps {
+interface PercentageProps {
   color: string;
 }
 
@@ -31,7 +31,7 @@ export const CircleBG = styled.circle.attrs({
   fill: "#fff",
 })``;
 
-export const Porcentage = styled.span<PorcentageProps>`
+export const Percentage = styled.span<PercentageProps>`
   position: absolute;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ export const Porcentage = styled.span<PorcentageProps>`
   font-size: 1.2em;
 `;
 
-export const Capition = styled.span`
+export const Caption = styled.span`
   font-size: 1em;
   font-weight: 400;
   text-transform: lowercase;
