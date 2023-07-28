@@ -1,17 +1,18 @@
+import Button from '../Button/Button'
 import * as C from './Confirm.styles'
 
 export interface ConfirmProps {
-  titles: string
+  title: string
   onConfirm: () => any
   onCancel: () => any
 }
 
 export default function Confirm(props: ConfirmProps) {
   return <C.Wrapper>
-    <C.Title>{props.titles}</C.Title>
+    <C.Title>{props.title}</C.Title>
     <C.ConfirmButtonDisplay>
-      <button onClick={props.onCancel}>Não</button>
-      <button onClick={props.onConfirm}>Sim</button>
+      <Button variant='danger' label='Não' onClick={props.onCancel} />
+      <Button variant='primary' label='Sim' onClick={props.onConfirm} />
     </C.ConfirmButtonDisplay>
   </C.Wrapper>
 }

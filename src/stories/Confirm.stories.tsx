@@ -10,6 +10,6 @@ type Story = StoryObj<ConfirmProps>;
 
 export const Default: Story = {
   args: {
-    titles: 'Você tem certeza?'
+    title: 'Você tem certeza?'
   }
 }
